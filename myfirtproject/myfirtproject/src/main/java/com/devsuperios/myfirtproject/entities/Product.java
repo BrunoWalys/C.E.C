@@ -19,6 +19,8 @@ public class Product implements Serializable{
 	private Long id;
 	private String nome;
 	private Double price;
+	private Double priceCusto;
+	private int quantidade;
 	
 	@ManyToOne
 	@JoinColumn(name = "category_id")
